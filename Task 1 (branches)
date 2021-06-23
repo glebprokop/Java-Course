@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+//Task 1 (branches)
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+        System.out.print("Input your angles (x, y) using Ent: ");
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        
+        if ((x+y)<=180){
+            if ((x==90)|(y==90)|((180-x-y)==90)){
+                System.out.println("This triangle can exist and it`s right triangle");
+            }
+            else{
+                System.out.println("This triangle can exist and it`s NOT right triangle");
+            }
+        }
+        else{
+            System.out.println("This triangle can NOT exist");
+        }
+    }
+}
