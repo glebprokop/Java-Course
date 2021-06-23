@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+//Task 3
+
+public class Main
+{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+        System.out.print("Input your x & y angles (press Ent after ever angle): ");
+        double x = in.nextInt();
+		double y = in.nextInt();
+		
+		double result = Math.tan(y*x)*(Math.sin(x) + Math.cos(y)) / (Math.cos(x) - Math.sin(y));
+		System.out.println(result);
+	}
+}
