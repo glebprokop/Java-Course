@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+//Task 4
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+        System.out.print("Input your variable: ");
+        double x = in.nextDouble();
+	    System.out.println((x * 1000) % 1000 + (int) x / 1000.0);
+	}
+}
