@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+//Task 5
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+        System.out.print("Input your time: ");
+        int t = in.nextInt();
+        //hours
+        int h = t/3600;
+        //min 
+        int m = (t - h*3600)/60;
+        //sec 
+        int s = (t-h*3600-m*60);
+        System.out.println(h + " ч " + m + " мин " + s + " с ");
+    }
+}
