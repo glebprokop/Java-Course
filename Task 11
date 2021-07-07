@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+        System.out.print("Input 'x' value: ");
+        double x = in.nextInt();
+	    
+	    if (x<=3){
+	        System.out.print((x*x - 3*x + 9));
+	        }
+	    else{
+	        System.out.print((1/(x*x*x + 6)));
+	    }
+    }
+}
